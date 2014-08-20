@@ -16,6 +16,36 @@
 		}
 		.store-stats {
 			background: none;
+			border-collapse: collapse;
+			border: none;
+
+			thead {
+				background: none;
+				th {
+					border-right: 1px solid #555;
+					color: #0045AC;
+					padding: 5px 20px;
+
+					&:last-child {
+						border-right: none;
+					}
+				}
+			}
+			tbody {
+				td {
+					border-right: 1px solid #555;
+					border-top: 1px solid #555; 
+					text-align: center;
+					font-style: italic;
+					font-size: 30px;
+					padding: 10px;
+					color: #555;
+
+					&:last-child {
+						border-right: none;
+					}
+				}
+			}
 		}
 	}
 }
