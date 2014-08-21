@@ -1,1 +1,32 @@
-<h2 class="page-title">Product Details</h2>
+<div class="product-container clearfix">
+      <div class="main-info-container">
+        <div class="meta-info clearfix">
+          <div class="store-logo">
+            <%= image_tag("store-logo.png", class: "img-logo") %> <br>
+            <%= link_to "&laquo; Back to store".html_safe, "/stores/1" %>
+          </div>
+          <table class="stats">
+            <thead>
+              <tr>
+                <th>Products</th>
+                <th>Collections</th>
+                <th>Followers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>178</td>
+                <td>49</td>
+                <td>867</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h1 class="product-name">Home Before Daylight Black home before daylight black dress.</h1>
+        <p class="product-info">Lorem ipsum dolor sit amet, scripta sanctus usu cu. Velit ludus falli vitae cu duo. Pro saepe quodsi intellegat id, cum te tollit tritani. Eam partem <a class ="ht" href="#">#tamquam</a> <a href="#" class="ht">#delicata</a> no. His te illud commodo, <a href="#" class="ht">#malorum</a> <a href="#" class="ht">#accusamus</a> est an. Te oratio vivendum neglegentur usu, <a href="#" class="ht">#voluptaria</a> disputando.</p>
+        <p class="price clearfix"><span class="amount">US$ 175.00</span></p>
+      </div>
+      <div class="main-image-container">
+       <%= image_tag("products/product-01.jpg") %>
+      </div>
+    </div>

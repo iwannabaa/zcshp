@@ -23,8 +23,8 @@
 	  <% 12.times do |i| %>
 	  <li>
 	  	<div class="product-item clearfix">
-	      <%= link_to image_tag("http://placehold.it/250x350"), "/products/1" %>
-	       <%= link_to image_tag("http://placehold.it/40x40", :class=>"store-logo"), "/stores/1" %>
+	      <%= link_to image_tag("products/product-01.jpg"), "/products/1" %>
+	       <%= link_to image_tag("store-logo.png", class: "store-logo", size: "50"), "/stores/1" %>
 	      <h3 class="product-item-title"><%= link_to "Product Name", "/products/1" %></h3>
 	      <h3 class="product-item-title subheader"><%= link_to "Store Name", "/stores/1" %></h3>
 	  	</div>

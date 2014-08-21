@@ -1,3 +1,111 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.product-container {
+  margin-top: 20px;
+
+  .main-info-container {
+    width: 600px;
+    float: right;
+
+    .store-logo {
+      float: left;
+
+      .img-logo { 
+        margin-bottom: 10px;
+      }
+    }
+
+    .meta-info {
+      .stats {
+        float: right;
+        border-collapse: collapse;
+        background: none;
+        border: none;
+
+        thead {
+        	background: none;
+        }
+
+        th {
+          font-weight: 300;
+          font-size: 18px;
+          color: #6C6863;
+        }
+        td {
+          font-weight: 300;
+          font-size: 36px;
+          color: #2772D6;
+          line-height: normal;
+        }
+        td, th {
+          padding: 0 10px;
+          text-align: center;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+        }
+        td:first-child,
+        th:first-child {
+          border-left: 0;
+        }
+        td:last-child,
+        th:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    .product-name {
+      font-size: 28px;
+      font-weight: 400;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .product-info {
+      .ht {
+        color: #067EB9;
+
+        &:hover {
+          border-bottom: dotted 1px #067EB9;
+        }
+      }
+    }
+    .price {
+      font-size: 30px;
+      font-weight: 700;
+      color: #2772D6;
+
+      .amount {
+        float: left;
+      }
+
+      .collection-icon {
+        display: block;
+        float: left;
+        width: 47px;
+        height: 34px;
+        margin-left: 10px;
+        background: url("../img/icon-collection.png");
+      }
+    }
+    .collection-thumbs {
+      img {
+        display: block;
+        float: left;
+        margin-left: 5px;
+
+        &:first-of-type {
+          margin-left:0;
+        }
+      }
+    }
+  }
+  .main-image-container {
+    float: left;
+
+    img {
+      display: block;
+    }
+  }
+}

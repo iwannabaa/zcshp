@@ -10,43 +10,51 @@
 		.store-logo {
 			float: left;
 			margin-right: 20px;
+			width: 250px;
+		}
+		.store-details {
+			width: 700px;
+			margin-bottom: 20px;
 		}
 		.page-title {
 			font-size: 26px;
 		}
 		.store-stats {
-			background: none;
-			border-collapse: collapse;
-			border: none;
+	        float: right;
+	        border-collapse: collapse;
+	        background: none;
+	        border: none;
 
-			thead {
-				background: none;
-				th {
-					border-right: 1px solid #555;
-					color: #0045AC;
-					padding: 5px 20px;
+	        thead {
+	        	background: none;
+	        }
 
-					&:last-child {
-						border-right: none;
-					}
-				}
-			}
-			tbody {
-				td {
-					border-right: 1px solid #555;
-					border-top: 1px solid #555; 
-					text-align: center;
-					font-style: italic;
-					font-size: 30px;
-					padding: 10px;
-					color: #555;
-
-					&:last-child {
-						border-right: none;
-					}
-				}
-			}
-		}
+	        th {
+	          font-weight: 300;
+	          font-size: 18px;
+	          color: #6C6863;
+	        }
+	        td {
+	          font-weight: 300;
+	          font-size: 36px;
+	          color: #2772D6;
+	          line-height: normal;
+	        }
+	        td, th {
+	          padding: 0 10px;
+	          text-align: center;
+	          border-left: 1px solid black;
+	          border-right: 1px solid black;
+	        }
+	        td:first-child,
+	        th:first-child {
+	          border-left: 0;
+	        }
+	        td:last-child,
+	        th:last-child {
+	          border-right: 0;
+	        }
+	    }
 	}
 }
 .page-title {
