@@ -5,12 +5,23 @@
 				<h2>Looking for something?</h2>
 			</div>
 			<div class="columns">
-				<div class="row collapse">
+				<div class="row collapse search-input">
 					<div class="columns large-10">
 						<input type="text">
 					</div>
 					<div class="columns large-2">
-						<a href="#" class="button postfix">Go</a>
+						<a href="#" class="button postfix">Search</a>
+					</div>
+				</div>
+				<div class="row search-options">
+					<div class="columns large-4">
+						<input type="radio" name="search-type" value="products" id="searchProducts" checked="checked"><label for="searchProducts">Products</label> 
+					</div>
+					<div class="columns large-4">
+						<input type="radio" name="search-type" value="stores" id="searchStores"><label for="searchStores">Stores</label>
+					</div>
+					<div class="columns large-4">
+						<input type="radio" name="search-type" value="hashtags" id="searchHashtags"><label for="searchHashtags">Hashtags</label>
 					</div>
 				</div>
 			</div>
@@ -19,6 +30,7 @@
 	</div>
 </div>
 <div class="feed">
+	<h3>Check out some featured products!</h3>
 	<ul class="large-block-grid-4 medium-block-grid-3 small-block-grid-2">
 	  <% 12.times do |i| %>
 	  <li>

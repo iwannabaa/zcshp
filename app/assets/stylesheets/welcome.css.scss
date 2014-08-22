@@ -2,8 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.search-input input,
+.search-input .button {
+	margin-bottom: 5px;
+}
 .feed {
-	margin-top: 20px;
+	margin-top: 40px;
 
 	.store-logo {
 		margin-top: 5px;
