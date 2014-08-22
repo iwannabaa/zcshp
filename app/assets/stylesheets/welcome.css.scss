@@ -14,4 +14,15 @@
 		margin-right: 5px;
 		float: left;
 	}
+	.product-item-content {
+		padding-left: 0;
+	}
+	.product-item-title {
+		font-size: 12px;
+		margin-top: 10px;
+
+		&.subheader {
+			margin-top: 5px;
+		}
+	}
 }

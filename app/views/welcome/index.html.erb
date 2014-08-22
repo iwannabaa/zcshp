@@ -36,9 +36,15 @@
 	  <li>
 	  	<div class="product-item clearfix">
 	      <%= link_to image_tag("products/product-01.jpg"), "/products/1" %>
-	       <%= link_to image_tag("store-logo.png", class: "store-logo", size: "50"), "/stores/1" %>
-	      <h3 class="product-item-title"><%= link_to "Product Name", "/products/1" %></h3>
-	      <h3 class="product-item-title subheader"><%= link_to "Store Name", "/stores/1" %></h3>
+	      <div class="row">
+	      	<div class="columns large-4">
+	      		<%= link_to image_tag("store-logo.png", class: "store-logo"), "/stores/1" %>
+	      	</div>
+	      	<div class="columns large-8 product-item-content">
+	      		<h3 class="product-item-title"><%= link_to "Black Night Dress", "/products/1" %></h3>
+	      		<h3 class="product-item-title subheader"><%= link_to "Bululu Artisanal", "/stores/1" %></h3>
+	      	</div>
+	      </div>
 	  	</div>
 	  </li>
 	  <% end %>
