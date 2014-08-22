@@ -1,26 +1,26 @@
 <div class="row">
-	<div class="columns small-centered large-6 text-center">
+	<div class="columns small-centered medium-8 large-6 text-center">
 		<div class="row">
 			<div class="columns">
 				<h2>Looking for something?</h2>
 			</div>
 			<div class="columns">
 				<div class="row collapse search-input">
-					<div class="columns large-10">
+					<div class="columns small-10">
 						<input type="text">
 					</div>
-					<div class="columns large-2">
+					<div class="columns small-2">
 						<a href="#" class="button postfix">Search</a>
 					</div>
 				</div>
 				<div class="row search-options">
-					<div class="columns large-4">
+					<div class="columns small-4">
 						<input type="radio" name="search-type" value="products" id="searchProducts" checked="checked"><label for="searchProducts">Products</label> 
 					</div>
-					<div class="columns large-4">
+					<div class="columns small-4">
 						<input type="radio" name="search-type" value="stores" id="searchStores"><label for="searchStores">Stores</label>
 					</div>
-					<div class="columns large-4">
+					<div class="columns small-4">
 						<input type="radio" name="search-type" value="hashtags" id="searchHashtags"><label for="searchHashtags">Hashtags</label>
 					</div>
 				</div>
@@ -37,12 +37,13 @@
 	  	<div class="product-item clearfix">
 	      <%= link_to image_tag("products/product-01.jpg"), "/products/1" %>
 	      <div class="row">
-	      	<div class="columns large-4">
+	      	<div class="columns small-5 small-centered medium-uncentered medium-4 medium-left item-store">
 	      		<%= link_to image_tag("store-logo.png", class: "store-logo"), "/stores/1" %>
 	      	</div>
-	      	<div class="columns large-8 product-item-content">
+	      	<div class="columns medium-8 small-12 product-item-content">
 	      		<h3 class="product-item-title"><%= link_to "Black Night Dress", "/products/1" %></h3>
 	      		<h3 class="product-item-title subheader"><%= link_to "Bululu Artisanal", "/stores/1" %></h3>
+	      		<p class="item-price text-right">$9.99</p>
 	      	</div>
 	      </div>
 	  	</div>
